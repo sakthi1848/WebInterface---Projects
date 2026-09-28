@@ -1,0 +1,30 @@
+.hobby-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hobby-card {
+  width: 220px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.hobby-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hobby-card h2 {
+  font-size: 20px;
+}
+
+.hobby-card p {
+  color: gray;
+}

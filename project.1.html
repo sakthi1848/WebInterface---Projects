@@ -1,0 +1,81 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Counter</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .counter-box {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #count {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="counter-box">
+        <h1>Number Counter</h1>
+
+        <div id="count">0</div>
+
+        <button onclick="decrease()">-1</button>
+        <button onclick="increase()">+1</button>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function increase() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+
+        function decrease() {
+            count--;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+
+</body>
+</html>
+```
